@@ -16,3 +16,18 @@
   color: var(--white);
   padding-top: 30px;
 }
+
+.cadeado {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 51px;
+  height: 62px;
+  background: url(../../img/cadeado.svg);
+}
+
+@media (max-width: 700px) {
+  .cadeado {
+    display: none;
+  }
+}
