@@ -20,7 +20,7 @@
   font-weight: 700;
   line-height: 1.1;
   color: var(--white);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .introduction__description {
@@ -32,13 +32,12 @@
 }
 
 .introduction__description:last-child {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
   .introduction__title {
     font-size: 26px;
-    margin-bottom: 30px;
   }
 
   .introduction__description:last-child {
@@ -47,6 +46,10 @@
 }
 
 @media (max-width: 1000px) {
+  .introduction {
+    padding: 40px 0 80px;
+  }
+
   .introduction .content {
     flex-direction: column;
     gap: 40px;
@@ -58,11 +61,5 @@
 
   .introduction__text {
     order: 1;
-  }
-}
-
-@media (max-width: 700px) {
-  .introduction {
-    padding: 40px 0;
   }
 }
