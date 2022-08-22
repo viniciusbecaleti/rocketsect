@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rocket.sect</title>
   <meta name="description" content="A informação é fundamental e de extrema importância para qualquer empresa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,13 +19,41 @@
       </a>
 
       <nav class="nav">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Início</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Serviços</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contato</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main class="introduction">
+    <div class="content">
+      <div class="introduction__image">
+        <img src="img/hero.svg" alt="">
+      </div>
+
+      <div class="introduction__text">
+        <h1 class="introduction__title">Seus dados estão <span>protegidos</span>?</h1>
+        <p class="introduction__description">A informação é fundamental e de <strong>extrema importância</strong> para qualquer empresa.</p>
+        <p class="introduction__description">Aqui vai um <strong>texto</strong> como se fosse uma empresa de <span>segurança da informação</span> apresentando o seu produto e com o texto todo estilizado.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content">
+      <p class="footer__copy">para mais informações nos siga no instagram @rocketsect</p>
+    </div>
+  </footer>
 </body>
 </html>

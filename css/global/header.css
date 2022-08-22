@@ -1,0 +1,61 @@
+.header {
+  padding: 40px 0;
+}
+
+.header .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.nav__link {
+  position: relative;
+  display: inline-block;
+  color: #FFF;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  padding: 16px 0;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  border-bottom: dashed 2px #FFF;
+  transition: 300ms;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav__link:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+}
